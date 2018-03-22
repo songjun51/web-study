@@ -1,0 +1,184 @@
+@import "flex.less";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{
+    margin:0;
+    overflow-x:hidden; 
+}
+
+#app{
+    width:100vw;
+    height:200vh;
+
+    
+}
+
+.box{
+    color:#ff0;
+}
+
+.nav{
+    width: 100vw;
+    height: 7vh;
+
+    background-color:#fff;
+
+    position: fixed;
+
+}
+
+.nav > .menu-bar{
+    width:70%;
+    height:100%;
+
+    margin:auto;
+
+    .flex-align-between;
+}
+
+.nav > div > div > .img{
+    background-size:cover;
+    background-image: url("logo.png");
+
+    width:208.2px;
+    height:49.6px;
+}
+
+.nav > .menu-bar > .nav-menu {
+    .flex-align-around;
+
+    width:400px;
+    height:100%;
+}
+#main{
+    background-color:black;    
+    width: 100%;
+    height: 100vh;
+    margin-top: 7vh;
+    background-size: contain;
+    background-image: url("bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#app > #main > #maintypo {
+    margin-left: 25%;
+    margin-top: 4%;
+    color: white;
+    font-size: 2.5em;
+    font-family: 'Noto Sans KR bold', sans-serif;
+}
+#maintypo > span{
+    color: greenyellow;
+}
+
+#app > #main > #maininfo {
+    width: 70vw;
+    height: 20vh;
+    margin-top : 35vh;
+    margin-left: auto;
+    margin-right: auto;
+    // background-color: red;
+    .flex-align-around;
+}
+
+#app > #main > #maininfo > .icons {
+    width: 15%;
+    height: 100%;
+    overflow: hidden;
+
+    // background-color:violet;
+} 
+
+#app > #main > #maininfo  > .icons  > #icons1{
+    background-image: url('http://storage.googleapis.com/cr-resource/image/89f3c4d79c5a3b72c51b17de5928b0ea/fg1/1920/112b729caf3e3009b505d21cd1aaebb6.png');
+    }
+    #app > #main > #maininfo  > .icons  > #icons2{
+        background-image: url('http://storage.googleapis.com/cr-resource/image/89f3c4d79c5a3b72c51b17de5928b0ea/fg1/1920/3ec7c6b3d0f26afcd60fa5760738caac.png');
+        }
+        #app > #main > #maininfo  > .icons  > #icons3{
+            background-image: url('http://storage.googleapis.com/cr-resource/image/89f3c4d79c5a3b72c51b17de5928b0ea/fg1/1920/78d58451e9b2480a48b930f47a8f939f.png');
+            }
+            #app > #main > #maininfo  > .icons  > #icons4{
+                background-image: url('http://storage.googleapis.com/cr-resource/image/89f3c4d79c5a3b72c51b17de5928b0ea/fg1/1920/82b07b02248a58e0e21d0dfcec6468cc.png');
+                }
+
+#app > #main > #maininfo  > .icons  > .iconop{
+    width: 25%;
+    height: 25%;
+    margin-top: 10%;
+    margin-left: 10%;
+    background-size: cover;
+}
+
+
+#app > #main > #maininfo > .icons > .icontext{
+    color: white;
+    margin: 10%;
+    font-family:  'Noto Sans KR', sans-serif ;
+
+}
+
+#app > #main2{
+    width: 100vw;
+    height: 70vh;
+    background-color: white;
+    .flex-align-between;
+    margin-top: 1.7vw;
+    
+}
+#app > #main2 > #main2-1{
+width: 40vw;
+height: 100%;
+}
+#app > #main2 > #main2-2{
+    width: 60vw;
+    height: 100%;
+    }
+    #app > #main2 > #main2-1 > #main2-1naeyoung{
+    float:right;
+    margin-right: 10%;
+    margin-top: 8%;
+    text-align: right;
+    }
+#app > #main2 > #main2-1 > #main2-1naeyoung > #greenline{
+    background-color: springgreen;
+    width: 35%;
+    height: 3px;
+    float:right;
+}
+#app > #main2 > #main2-1 > #main2-1naeyoung > #vision{
+     font-size: 2em;
+     margin-left: 50%;
+     margin-top: 5%;
+     overflow: hidden;
+}
+#app > #main2 > #main2-1 > #main2-1naeyoung > #visionar{
+   margin-top : 10%;
+    line-height: 1.8em;
+}
+
+#app > #main2 > #main2-2 > #main2-img{
+    width: 70%;
+    height: 80%;
+    margin-top: 5.4%;
+    
+    background-image: url('bg.jpg');
+    background-size: cover;
+
+}
+
+
+@media (min-width:640px){
+    .box{
+        width:50%;
+        height:60%;
+    }
+}
+
+@media (max-width:639px){
+    .box{
+        width:100%;
+        height:60%;
+
+    }
+}
